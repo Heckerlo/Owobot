@@ -155,21 +155,21 @@ const reloadPresence = async (client:discord.Client) => {
     const getExternalURL = await discord.RichPresence.getExternal(
         client,
         "367827983903490050",
-        "https://i.imgur.com/9wrvM38.png",
+        "https://i.imgur.com/rQBewyy.jpeg",
         "https://i.imgur.com/MscNx02.png"
     )
     const activity = new discord.RichPresence()
         .setApplicationId("367827983903490050")
         .setType("PLAYING")
-        .setName("I AM ETERNITYYY")
-        .setDetails("Simply fulfilling my duties")
+        .setName("Sục cặc")
+        .setDetails("Đơn giản là tao nứng")
         .setStartTimestamp(client.readyAt!)
         .setAssetsLargeImage(getExternalURL[0].external_asset_path)
-        .setAssetsLargeText("You Dare Challenge me?")
+        .setAssetsLargeText("Skibidi sigma?")
         .setAssetsSmallImage(getExternalURL[1].external_asset_path)
         .setAssetsSmallText("BKI Eternityyy")
-        .addButton('Github', "https://github.com/LongAKolangle/discord-owo-selfbot")
-        .addButton('Youtube', "https://www.youtube.com/@daongotau")
+        .addButton('Github', "https://m.youtube.com/watch?v=dQw4w9WgXcQ")
+        .addButton('Youtube', "https://m.youtube.com/watch?v=dQw4w9WgXcQ")
     client.user?.setActivity(activity.toJSON())
     client.user?.setStatus("idle")
 }
